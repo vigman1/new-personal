@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 
 function Ask() {
-    const question = "/images/ask.gif";
-    const yes = "/images/yes.gif";
-    const sad = "/images/sad-sad-cat.gif"
+    const question = "./images/ask.gif";
+    const yes = "./images/yes.gif";
+    const sad = "./images/sad-sad-cat.gif"
     const red = "#cf1735"
     const white = "white"
 
@@ -30,7 +30,7 @@ function Ask() {
                 <br/>
                 <div className='buttons'>
                     {
-                        hb ? (<img style={{height: '100px'}} src='images/heartbreak.jpg'></img>) : (
+                        hb ? (<img style={{height: '100px'}} src='./images/heartbreak.jpg'></img>) : (
                             <>
                             <button onClick={handleYes} className='sub' style={{backgroundColor: 'whitesmoke', width: '30%', margin: '20px 20px'}} >Yes</button>                    
                             <button onClick={handleNo} className='sub' style={{backgroundColor: 'whitesmoke', width: '30%', margin: '20px 20px'}} >No</button>
